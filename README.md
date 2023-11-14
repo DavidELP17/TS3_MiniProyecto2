@@ -14,8 +14,8 @@ Se requiere construir un framework que permita procesar y caracterizar las seña
 ![Figura 1. Ejemplo de la base de datos DEAP](https://github.com/DavidELP17/TS3_MiniProyecto1/assets/17619940/ce5004e5-296d-400a-b948-c6af9eca62fa)
 ![Figura 2. Ejemplo de la base de datos DEAP](https://github.com/DavidELP17/TS3_MiniProyecto1/assets/17619940/14193f64-aadd-49d8-966d-3466e1f62b56)
 
+<p align="center">Figura 1. Ejemplo de la base de datos DEAP.</p>
+
 Para el sistema de Análisis Multivariado de Señales fisiológicas obtenido en el Primer Mini-Proyecto, se debe construir un módulo de variable latente utilizando el algoritmo de PCA (Análisis de Componentes Principales). La idea es proyectar la matriz característica obtenida, a un espacio latente de menor dimensión \(q << D\). Seleccione diferentes configuraciones del número de componentes \(q\) y evalúe el mejor desempeño arrojado por el modelo midiendo la precisión (accuracy) y la matriz de confusión.
 
 Dado que PCA es un modelo lineal de variable latente en el cual las características son mapeadas de la forma \(z=Wx\), en muchas aplicaciones reales las relaciones entre los datos son no lineales. Es por esto que modelos como la reducción de la dimensionalidad a través del uso de funciones de mapeo (kernel) no lineales puede ayudarnos en la tarea. Aquí el mapeo se realiza utilizando (z=Φx), donde \(Φ\) es la matriz de mapeo no lineal conocida como función de kernel. Estas funciones de kernel pueden tener diferentes naturalezas como lineales, exponenciales, polinomiales, entre otras. Su objetivo aquí es realizar el procedimiento de mapeo del dataset de movimientos utilizando Kernel PCA (Kernel Principal Component Analysis).
-
-<p align="center">Figura 1. Ejemplo de la base de datos DEAP.</p>
